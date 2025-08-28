@@ -1,11 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>OO Mart</title>
+
+    <!--CSS External-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--TailwindCSS-->
+    <script scr="src=https://cdn.tailwindcss.com"></script>
 </head>
+
 <body>
-    
+
+    <!--Header Content-->
+    <header class="main-header py-[8px]">
+        <!--Icon-->
+        <div class="logo"></div>
+
+        <!--Navbar-->
+        <nav class="flex">
+            <a href="" class="border p-[4px]">Home</a>
+            <a href="" class="border p-[4px]">Our Profile</a>
+            <a href="" class="border p-[4px]">Portfolio</a>
+            <a href="" class="border p-[4px]">Message Us</a>
+        </nav>
+    </header>
+
+    <!--Main Content-->
+    <main>
+
+        <!--Home-->
+        <section id="home-page" class="min-h-[500px]">
+            <h2 class="text-center text-[24px] font-bold py-[16px]">
+                Welcome <span id="username"></span> to Our Website
+            </h2>
+        </section>
+
+        <hr />
+
+        <!--Our Profile-->
+        <section id="our-profile" class="min-h-[500px]"></section>
+
+        <hr />
+
+        <!--Portfolio-->
+        <section id="portfolio" class="min-h-[500px]"></section>
+
+        <hr />
+
+        <!--Message-->
+        <section id="message" class="min-h-[500px]">
+            <h2 class="text-center text-[24px] font-bold py-[16px]">
+                Message Us
+            </h2>
+
+            <form class="px-[16px]">
+                <label for="name-input">
+                    Name:
+                    <input type="text" id="name-input" class="border">
+                </label>
+
+                <button type="submit" onclick=validateForm()>Send Message</button>
+            </form>
+
+        </section>
+
+        <hr />
+
+    </main>
+
+    <!--Footer Content-->
+    <footer class="text-center">
+        <p>&copy; 2025. All Rights Reserved.</p>
+    </footer>
+
+    <!--JS External-->
+    <script src="js/script.js"></script>
 </body>
+
 </html>
